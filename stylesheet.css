@@ -1,0 +1,146 @@
+body {
+	background-color: black;
+	font-family: Verdana;
+	color: white;
+	scrollbar-base-color: red;
+}
+
+p {
+	color: white;
+	
+}
+
+a {
+	color: #AAAAAA;
+	font-family: Verdana;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	font-family: Verdana;
+	text-decoration: underline;
+}
+
+h1 {
+	color: white;
+	font-size: 72px;
+}
+
+#banner {
+	border: 2px dashed white;
+	border-radius: 5px;
+	height: 300px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+#menu {
+	border: 2px dashed white;
+	border-radius: 5px;
+	width: 200px;
+	margin: auto;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#scene {
+	height: 400px;
+	width: 100%;
+	border: 2px solid red;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#messages {
+	height: 200px;
+	width: 100%;
+	border: 2px dashed red;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.footerButton {
+	border: 1px solid red;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 3px;
+	width: 75px;
+	border-radius: 5px;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+.sceneBG {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#continue {
+	height: 40px;
+	width: 80px;
+	border: 1px solid red;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	position: fixed;
+	bottom: 5px;
+	right: 20px;
+	font-size: 12px;
+	font-family: Verdana;
+	display: table;
+}
+
+#continueButton {
+	vertical-align: middle;
+	margin: auto;
+	margin-top: 12px;
+}
+
+#textArea {
+	width: 100%;
+}
+
+#messageBottom {
+	bottom: 0px;
+}
+
+
+::-webkit-scrollbar {
+	border: 1px solid red;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: black;
+	border: 1px solid red;
+	border-radius: 3px; 
+}
+
+::-webkit-scrollbar-button {
+	background-color: black;
+	border: 1px solid red;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-track-piece { 
+	background-color: black;
+}
