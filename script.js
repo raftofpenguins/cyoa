@@ -223,6 +223,12 @@ function getMessage(story) {
 		return "<p class='newMessage'>I sent my affirmative reply the next morning and prepared for my journey.</p>";
 	}
 
+	else if (story == 9) {
+		$("#continue").show();
+
+		return "<p class='newMessage'>...A week later, I heard the sound of hooves clickity clackin' down my track, drawing ever closer.</p>";
+	}
+
 	else if (story == 999) {
 		$("#continue").show();
 
