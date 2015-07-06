@@ -4,6 +4,10 @@ $(document).ready(function() {
 
 var story = 0;
 
+var rope = false;
+var candle = false;
+var mirror = false;
+
 console.log("Beginning the Groovy, Spooky Mystery!");
 debugLog(story);
 console.log("========================================");
@@ -19,6 +23,15 @@ $(document).on('click', '#continueButton', function () {
 
 		story += 1;
 		var choices = ["#rsvpYes", "#rsvpNo"]
+		addChoice(story, choices);
+	}
+
+	else if (story == 10) { //Pick a useful item
+		console.log("2nd Choice being made now!");
+		debugLog(story);
+
+		story += 1;
+		var choices = ["#ropeChoice", "candleChoice", "#mirrorChoice"]
 		addChoice(story, choices);
 	}
 
@@ -42,7 +55,7 @@ $(document).on('click', '#rsvpYes', function () {
 		console.log("RSVP'd Yes");
 		debugLog(story);
 
-		story += 2;
+		story = 8;
 		addMessage(story);
 		
 	}
@@ -68,6 +81,65 @@ $(document).on('click', '#rsvpNo', function () {
 
 	else {
 		console.log("You already RSVP'd!");
+		debugLog(story);
+	}
+});
+
+
+//Choosing items to take on your journey!
+$(document).on('click', '#ropeChoice', function () {
+	
+	if (story == 11) {
+		console.log("Picked rope");
+		rope = true;
+		debugLog(story);
+
+		story = 15;
+		debugLog(story);
+		console.log("Adding rope message");
+		addMessage(story);
+		story = 18;
+		console.log("Continuing story");
+	}
+
+	else {
+		console.log("You already picked an item");
+		debugLog(story);
+	}
+});
+
+$(document).on('click', '#candleChoice', function () {
+	
+	if (story == 11) {
+		console.log("Picked candle");
+		candle = true;
+		debugLog(story);
+
+		story = 16;
+		addMessage(story);
+		story = 18;
+	}
+
+	else {
+		console.log("You already picked an item");
+		debugLog(story);
+	}
+});
+
+$(document).on('click', '#mirrorChoice', function () {
+	
+	if (story == 11) {
+		console.log("Picked mirror");
+		mirror = true;
+		debugLog(story);
+
+		story = 17;
+		addMessage(story);
+		story = 18;
+	}
+
+	else {
+		console.log("You already picked an item");
 		debugLog(story);
 	}
 });
@@ -149,6 +221,17 @@ function addMessage(story) {
 
 function debugLog(story) {
 	console.log("- Story variable is currently: " + story);
+
+	if (rope == true) {
+		console.log("- Inventory currently contains: Rope");
+	} else if (candle == true) {
+		console.log("- Inventory currently contains: Candle");
+	} else if (mirror == true) {
+		console.log("- Inventory currently contains: Mirror");
+	} else {
+		console.log("- Inventory is currently empty.")
+	}
+
 }
 
 function debugTW() {
@@ -224,13 +307,61 @@ function getMessage(story) {
 	}
 
 	else if (story == 9) {
+
+		return "<p class='newMessage'>Other than my personal effects and some toiletries, I decided to pack an extra item that might prove itself to be useful.</p>";
+	}
+
+	else if (story == 10) {
+
+		return "<p class ='newMessage'>I chose:</p>";
+	}
+
+	else if (story == 11) {
+
+		return "<ul><li><div id='ropeChoice'><a href= '#messageBottom'> [Rope] - 'One never knows when you might need some rope.'</a></div></li></ul>";
+	}
+
+	else if (story == 12) {
+
+		return "<ul><li><div id= 'candleChoice'><a href= '#messageBottom'> [A candle and matches] - 'A little something to light the way if the path is dark.'</a></div></li></ul>";
+	}
+
+	else if (story == 13) {
+
+		return "<ul><li><div id= 'mirrorChoice'><a href= '#messageBottom'> [A small hand mirror] - 'It never hurts to look nice.'</a></div></li></ul>";
+	}
+
+	else if (story == 15) {
 		$("#continue").show();
+
+		return "<p class='newMessage'>I chose the rope.</p>";
+	}
+
+	else if (story == 16) {
+		$("#continue").show();
+
+		return "<p class='newMessage'>I chose the candle and matches.</p>";
+	}
+
+	else if (story == 17) {
+		$("#continue").show();
+
+		return "<p class='newMessage'>I chose the mirror.</p>";
+	}
+
+	else if (story == 19) {
+
+		return "<p class='newMessage'> After neatly packing my travel bag, I readied myself for bed, my stomach knotted with anticipation. It was going to be a long week.</p>";
+	}
+
+	else if (story == 20) {
+		
 
 		return "<p class='newMessage'>...A week later, I heard the sound of hooves clickity clackin' down my track, drawing ever closer.</p>";
 	}
 
 	else if (story == 999) {
-		$("#continue").show();
+		
 
 		return "<p class='newMessage'>I said 'naw, fuck that shit' and went on with my life.</p>";
 	}
