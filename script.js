@@ -308,12 +308,12 @@ function getMessage(story) {
 	}
 
 	else if (story == 10) {
-		return "<p class ='newMessage'>I chose:</p>";
+		return "<p class ='newMessage'>I chose to bring:</p>";
 	}
 
 	else if (story == 11) {
 
-		return "<ul><li><div id='ropeChoice'><a href= '#messageBottom'> [Rope] - 'One never knows when you might need some rope.'</a></div></li></ul>";
+		return "<ul><li><div id='ropeChoice'><a href= '#messageBottom'> [Rope] - 'One never knows when a rope might be handy.'</a></div></li></ul>";
 	}
 
 	else if (story == 12) {
@@ -323,22 +323,22 @@ function getMessage(story) {
 
 	else if (story == 13) {
 
-		return "<ul><li><div id= 'mirrorChoice'><a href= '#messageBottom'> [A small hand mirror] - 'It never hurts to look nice.'</a></div></li></ul>";
+		return "<ul><li><div id= 'mirrorChoice'><a href= '#messageBottom'> [A small hand mirror] - 'I can peer around corners and stay lookin' good.'</a></div></li></ul>";
 	}
 
 	else if (story == 15) {
 		$("#continue").show();
-		return "<p class='newMessage'>I chose the rope.</p>";
+		return "<p class='newMessage'>I chose the rope -- might get me out of a bind.</p>";
 	}
 
 	else if (story == 16) {
 		$("#continue").show();
-		return "<p class='newMessage'>I chose the candle and matches.</p>";
+		return "<p class='newMessage'>I chose the candle and matches -- there's something comforting about the faint flame.</p>";
 	}
 
 	else if (story == 17) {
 		$("#continue").show();
-		return "<p class='newMessage'>I chose the mirror.</p>";
+		return "<p class='newMessage'>I chose the mirror -- I wonder if Marquis Malartderrière can see his own reflection in it?</p>";
 	}
 
 	else if (story == 19) {
