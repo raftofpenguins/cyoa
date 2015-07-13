@@ -291,28 +291,23 @@ function getMessage(story) {
 	}
 
 	else if (story == 6) {
-
 		return "<ul><li><div id='rsvpYes'><a href='#messageBottom'>[Yes] - 'Please expect my presence at your event.'</a></div></li></ul>";
 	}
 
 	else if (story == 7) {
-
 		return "<ul><li><div id='rsvpNo'><a href='#messageBottom'>[No] - 'I am regrettably unable to join you at this event.'</a></div></li></ul>";
 	}
 
 	else if (story == 8) {
 		$("#continue").show();
-
 		return "<p class='newMessage'>I sent my affirmative reply the next morning and prepared for my journey.</p>";
 	}
 
 	else if (story == 9) {
-
 		return "<p class='newMessage'>Other than my personal effects and some toiletries, I decided to pack an extra item that might prove itself to be useful.</p>";
 	}
 
 	else if (story == 10) {
-
 		return "<p class ='newMessage'>I chose:</p>";
 	}
 
@@ -333,40 +328,34 @@ function getMessage(story) {
 
 	else if (story == 15) {
 		$("#continue").show();
-
 		return "<p class='newMessage'>I chose the rope.</p>";
 	}
 
 	else if (story == 16) {
 		$("#continue").show();
-
 		return "<p class='newMessage'>I chose the candle and matches.</p>";
 	}
 
 	else if (story == 17) {
 		$("#continue").show();
-
 		return "<p class='newMessage'>I chose the mirror.</p>";
 	}
 
 	else if (story == 19) {
-
 		return "<p class='newMessage'> After neatly packing my travel bag, I readied myself for bed, my stomach knotted with anticipation. It was going to be a long week.</p>";
 	}
 
-	else if (story == 20) {
-		
-
+	else if (story == 20) {	
 		return "<p class='newMessage'>...A week later, I heard the sound of hooves clickity clackin' down my track, drawing ever closer.</p>";
 	}
 
 	else if (story == 999) {
-		
-
+		$("#continue").show();
 		return "<p class='newMessage'>I said 'naw, fuck that shit' and went on with my life.</p>";
 	}
 
 	else {
+		$("#continue").hide();
 		return "<p class='newMessage'>Alas, the story ends here... <a href='index.html' target='main'>Click here</a> to return home.</p>";
 	}
 }
