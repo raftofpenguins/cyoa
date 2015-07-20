@@ -3,11 +3,11 @@ body {
 	font-family: Verdana;
 	color: white;
 	scrollbar-base-color: red;
+	font-size: 100%;
 }
 
 p {
 	color: white;
-	
 }
 
 a {
@@ -24,7 +24,7 @@ a:hover {
 
 h1 {
 	color: white;
-	font-size: 72px;
+	font-size: 400%;
 }
 
 #banner {
