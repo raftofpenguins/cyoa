@@ -8,12 +8,14 @@ body {
 
 	p {
 		color: white;
+		font-size: 90%;
 	}
 
 	a {
 		color: #AAAAAA;
 		font-family: Verdana;
 		text-decoration: none;
+		font-size: 90%;
 	}
 
 	a:hover {
@@ -49,11 +51,18 @@ body {
 
 /*Home page*/
 
+	#page {
+		width: 90%;
+		max-width: 960px;
+		margin: auto;
+		min-width: 320px;
+	}
+
 	#banner {
 		border: 2px dashed white;
 		border-radius: 5px;
-		height: 300px;
-		width: 80%;
+		/*height: 33.75em;*/
+		width: 100%;
 		margin: auto;
 		text-align: center;
 	}
@@ -61,21 +70,27 @@ body {
 	#menu {
 		border: 2px dashed white;
 		border-radius: 5px;
-		width: 200px;
+		width: 11em;
 		margin: auto;
 		text-align: center;
-		margin-top: 100px;
+		margin-top: 2.75em;
 	}
 
 /*Game page*/
+
+#pageGame {
+	width: 90%;
+	max-width: 960px;
+	margin: auto;
+	min-width: 320px;
+}
 
 #scene {
 	height: 62.5%;
 	width: 100%;
 	border: 2px solid red;
 	border-radius: 5px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 	.sceneBG {
@@ -86,13 +101,17 @@ body {
 		height: 62.5%;
 	}
 
+#lowerContainer {
+	height: 12.25em;
+	width: 100%;
+}
 
 #messages {
-	height: 31.25%;
+	height: 10.5em;
 	width: 100%;
 	border: 2px dashed red;
 	border-radius: 5px;
-	margin-top: 1em;
+	margin-top: 0.5em;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -105,17 +124,20 @@ body {
 
 
 	#continue {
-		height: 40px;
-		width: 80px;
+		height: 2.5em;
+		width: 5em;
 		border: 1px solid red;
 		border-radius: 5px;
-		margin-right: 10px;
+		margin-right: 0.75em;
 		margin-bottom: 5px;
 		text-align: center;
+		float: right;
+		
 		position: fixed;
-		bottom: 5px;
-		right: 20px;
-		font-size: 12px;
+		bottom: 0.25em;
+		right: 1.25em;
+		
+		font-size: 80%;
 		font-family: Verdana;
 		display: table;
 	}
@@ -123,7 +145,7 @@ body {
 	#continueButton {
 		vertical-align: middle;
 		margin: auto;
-		margin-top: 12px;
+		margin: 0.55em 1em;
 	}
 
 	#textArea {
@@ -135,19 +157,43 @@ body {
 	}
 
 #footer {
+	/*
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	height: 30px;
+	*/
+	height: 2.25em;
 	width: 100%;
 	text-align: center;
+	border: 2px solid red;
+	border-radius: 5px;
+	margin-top: 0.5em;
 }
 
 	.footerButton {
-		border: 1px solid red;
-		float: left;
+		border: 1px dotted red;
+		border-radius: 5px;
+		display: inline-block;
+
+		/*
 		margin-left: 20px;
 		margin-bottom: 3px;
+		
+		margin: auto;
 		width: 5em;
-		border-radius: 5px;
+		*/
+
+		width: 30%;
+		margin: 0.5em auto;
+		max-width: 10em;
+		
 	}
+
+/* Responsive Elements */
+
+
+@media screen and (max-width: 740px) {
+	h1 {
+		font-size: 300%;
+	}
+}
