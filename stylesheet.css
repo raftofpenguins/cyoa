@@ -11,6 +11,13 @@ body {
 		font-size: 90%;
 	}
 
+	ul {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
 	a {
 		color: #AAAAAA;
 		font-family: Verdana;
@@ -134,8 +141,8 @@ body {
 		float: right;
 		
 		position: fixed;
-		bottom: 0.25em;
-		right: 1.25em;
+		bottom: -0.25em;
+		right: 1em;
 		
 		font-size: 80%;
 		font-family: Verdana;
@@ -149,7 +156,7 @@ body {
 	}
 
 	#textArea {
-		width: 100%;
+		width: 90%;
 	}
 
 	#messageBottom {
@@ -191,9 +198,21 @@ body {
 
 /* Responsive Elements */
 
+@media screen and (max-width: 830px) {
+	#textArea {
+		width: 80%;
+	}
+}
 
 @media screen and (max-width: 740px) {
 	h1 {
 		font-size: 300%;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	#textArea {
+		width: 70%;
+		font-size: 80%;
 	}
 }
