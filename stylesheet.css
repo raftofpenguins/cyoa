@@ -122,6 +122,16 @@ body {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+	.scroll-wrapper {
+		-webkit-overflow-scrolling: touch;
+	  	overflow-y: scroll;
+
+		/* important:  dimensions or positioning here! */
+	}
+
+	.scroll-wrapper iframe {
+		/* nada! */
+	}
 	
 	iframe {
 		height: 100%;
