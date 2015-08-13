@@ -114,19 +114,27 @@ body {
 }
 
 #messages {
-	height: 12em;
+	/*height: 12em;
 	width: 100%;
 	border: 2px dashed red;
 	border-radius: 5px;
 	margin-top: 0.5em;
 	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 5px;*/
 }
 	.scroll-wrapper {
 		-webkit-overflow-scrolling: touch;
 	  	overflow-y: scroll;
 
 		/* important:  dimensions or positioning here! */
+
+		height: 12em;
+		width: 100%;
+		border: 2px dashed red;
+		border-radius: 5px;
+		margin-top: 0.5em;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	.scroll-wrapper iframe {
